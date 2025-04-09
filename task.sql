@@ -1,6 +1,3 @@
-USE ShopDB; 
-
--- Create your stored procedure here
 USE ShopDB;
 
 DELIMITER //
@@ -11,6 +8,6 @@ BEGIN
 	FROM Products
 	INNER JOIN ProductInventory
 	ON ProductInventory.ProductID = Products.ID
-    WHERE Warehouses.ID = ID;
+    WHERE ProductInventory.WarehousesID = ID;
 END //
 DELIMITER ;
