@@ -8,6 +8,6 @@ BEGIN
 	FROM Products
 	INNER JOIN ProductInventory
 	ON ProductInventory.ProductID = Products.ID
-    WHERE ProductInventory.WarehousesID = ID;
+    WHERE ProductInventory.WarehouseID = ID;
 END //
 DELIMITER ;
